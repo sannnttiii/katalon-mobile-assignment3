@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002_Shipping with qty more than stock</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d1240fb-381c-4d5e-aafc-02bb58a7c34a</testCaseGuid>
+</TestCaseEntity>
