@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Reusable/Start Existing App'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Home/btn_Search'), 0)
+
+Mobile.setText(findTestObject('Home/input_Search'), 'teman', 0)
+
+Mobile.verifyElementNotExist(findTestObject('Home/txt_NameProductAvailableSearch'), 0)
+
+WebUI.callTestCase(findTestCase('Reusable/Terminate Existing App'), [:], FailureHandling.STOP_ON_FAILURE)
+

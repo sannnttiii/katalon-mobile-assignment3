@@ -21,3 +21,4 @@ Mobile.startExistingApplication('com.solodroid.solomerce', FailureHandling.STOP_
 
 Mobile.tap(findTestObject('Home/btn_HomeRecent'), 0)
 
+

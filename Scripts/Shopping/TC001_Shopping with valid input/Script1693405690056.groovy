@@ -47,13 +47,13 @@ Mobile.verifyElementVisible(findTestObject('Cart/txt_TotalCart'), 0)
 
 Mobile.tap(findTestObject('Cart/btn_CheckoutCart'), 0)
 
-Mobile.setText(findTestObject('Checkout/input_NameCheckout'), 'Santi', 0)
+Mobile.setText(findTestObject('Checkout/input_NameCheckout'), GlobalVariable.Global_NameProfile, 0)
 
-Mobile.setText(findTestObject('Checkout/input_EmailCheckout'), 'test@gmail.com', 0)
+Mobile.setText(findTestObject('Checkout/input_EmailCheckout'), GlobalVariable.Global_EmailProfile, 0)
 
-Mobile.setText(findTestObject('Checkout/input_PhoneCheckout'), '081992718198', 0)
+Mobile.setText(findTestObject('Checkout/input_PhoneCheckout'), GlobalVariable.Global_PhoneProfile, 0)
 
-Mobile.setText(findTestObject('Checkout/input_AddressCheckout'), 'Denpasar', 0)
+Mobile.setText(findTestObject('Checkout/input_AddressCheckout'), GlobalVariable.Global_AddressProfile, 0)
 
 Mobile.tap(findTestObject('Checkout/dropdown_Shipping'), 0, FailureHandling.STOP_ON_FAILURE)
 

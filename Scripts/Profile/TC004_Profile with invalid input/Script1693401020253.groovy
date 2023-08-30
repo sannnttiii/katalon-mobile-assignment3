@@ -27,7 +27,7 @@ Mobile.verifyElementVisible(findTestObject('Profile/btn_Name'), 0, FailureHandli
 
 Mobile.tap(findTestObject('Profile/btn_Name'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Profile/input_Profile'), GlobalVariable.Global_NameProfile, 0)
+Mobile.setText(findTestObject('Profile/input_Profile'), '', 0)
 
 Mobile.tap(findTestObject('Profile/btn_OkInputProfile'), 0)
 
@@ -35,7 +35,7 @@ Mobile.verifyElementVisible(findTestObject('Profile/btn_Email'), 0, FailureHandl
 
 Mobile.tap(findTestObject('Profile/btn_Email'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Profile/input_Profile'), GlobalVariable.Global_EmailProfile, 0)
+Mobile.setText(findTestObject('Profile/input_Profile'), 'emailgmail.com', 0)
 
 Mobile.tap(findTestObject('Profile/btn_OkInputProfile'), 0)
 
@@ -43,7 +43,7 @@ Mobile.verifyElementVisible(findTestObject('Profile/btn_Phone'), 0, FailureHandl
 
 Mobile.tap(findTestObject('Profile/btn_Phone'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Profile/input_Profile'), GlobalVariable.Global_PhoneProfile, 0)
+Mobile.setText(findTestObject('Profile/input_Profile'), '0', 0)
 
 Mobile.tap(findTestObject('Profile/btn_OkInputProfile'), 0)
 
@@ -51,7 +51,7 @@ Mobile.verifyElementVisible(findTestObject('Profile/btn_Address'), 0, FailureHan
 
 Mobile.tap(findTestObject('Profile/btn_Address'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Profile/input_Profile'), GlobalVariable.Global_AddressProfile, 0)
+Mobile.setText(findTestObject('Profile/input_Profile'), '', 0)
 
 Mobile.tap(findTestObject('Profile/btn_OkInputProfile'), 0)
 
@@ -61,6 +61,7 @@ Mobile.verifyElementText(findTestObject('Profile/txt_NameProfile'), GlobalVariab
 
 Mobile.verifyElementText(findTestObject('Profile/txt_Email'), GlobalVariable.Global_EmailProfile, FailureHandling.STOP_ON_FAILURE)
 
+//seharusnya no hp diberi batas minimal 10-12, sehingga jika user memasukkan kurang dari itu maka error.
 Mobile.verifyElementText(findTestObject('Profile/txt_Phone'), GlobalVariable.Global_PhoneProfile, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('Profile/txt_Address'), GlobalVariable.Global_AddressProfile, FailureHandling.STOP_ON_FAILURE)

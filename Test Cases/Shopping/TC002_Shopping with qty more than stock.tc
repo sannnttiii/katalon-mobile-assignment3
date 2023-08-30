@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC001_Shipping with valid input</name>
+   <name>TC002_Shopping with qty more than stock</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b798fb12-805a-4fc9-a0df-7e7aab80b69a</testCaseGuid>
+   <testCaseGuid>8d1240fb-381c-4d5e-aafc-02bb58a7c34a</testCaseGuid>
 </TestCaseEntity>

@@ -16,4 +16,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+
+WebUI.callTestCase(findTestCase('Reusable/Start Existing App'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Home/btn_Search'), 0)
+
+Mobile.setText(findTestObject('Home/input_Search'), 'usb', 0)
+
+Mobile.waitForElementPresent(findTestObject('Home/txt_NameProductAvailableSearch'), 0)
+
+def elementText = Mobile.getText(findTestObject('Home/txt_NameProductAvailableSearch'), 0)
+
+// Check if the element's text contains the expected text
+if (elementText.contains('usb')) {
+    KeywordUtil.markPassed('Available Product') 
+}
+
+WebUI.callTestCase(findTestCase('Reusable/Terminate Existing App'), [:], FailureHandling.STOP_ON_FAILURE)
 
