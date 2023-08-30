@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC006_Search product with invalid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67f9c6b4-d286-47a6-93d9-9dccce04122e</testCaseGuid>
+</TestCaseEntity>

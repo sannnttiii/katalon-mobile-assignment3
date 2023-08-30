@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001_Shopping with valid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b798fb12-805a-4fc9-a0df-7e7aab80b69a</testCaseGuid>
+</TestCaseEntity>
